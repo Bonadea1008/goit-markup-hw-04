@@ -127,7 +127,8 @@ img {
 }
 
 .contacts-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -136,9 +137,18 @@ img {
   text-decoration: none;
 }
 
+.icon-envelope,
+.icon-phone {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .header-list .header-link.current {
@@ -206,6 +216,22 @@ img {
 }
 
 /* Features */
+.container-icon {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
 .features-list {
   display: flex;
 }
