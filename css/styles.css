@@ -13,6 +13,7 @@
   --secondary-text-color: #757575;
   --hero-text-color: #ffffff;
   --accent-color: #2196f3;
+  --icon-color: #afb1b8;
   --background-primary: #ffffff;
   --background-secondary: #2f303a;
 }
@@ -309,9 +310,8 @@ img {
 
 .team-container {
   padding-top: 30px;
-  padding-bottom: 30px;
-  border-radius: 0px 0px 4px 4px;
   background-color: var(--background-primary);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -337,6 +337,41 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  fill: var(--icon-color);
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--hero-text-color);
 }
 
 /* Footer */
