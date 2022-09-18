@@ -59,6 +59,12 @@ img {
   list-style: none;
 }
 
+.link {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
 /* Header */
 
 .container {
@@ -331,31 +337,39 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  justify-content: space-between;
   align-items: center;
 }
 
 .social-item {
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.social-link {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
-  margin-bottom: 30px;
-}
 
-.social-item:not(:last-child) {
-  margin-right: 10px;
+  background-color: var(--background-primary);
+  color: var(--icon-color);
 }
 
 .social-icon {
-  fill: var(--icon-color);
+  display: block;
+  fill: currentColor;
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
+  color: var(--hero-text-color);
   background-color: var(--accent-color);
 }
 
@@ -396,6 +410,7 @@ img {
 }
 
 .clients-icon {
+  display: block;
   fill: var(--icon-color);
 }
 
@@ -463,14 +478,22 @@ img {
   margin-left: 70px;
 }
 
-.footer-social {
-  margin-top: 0;
-  margin-bottom: 0;
-  background: rgba(255, 255, 255, 0.1);
+.footer-social-list {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-social .social-icon {
-  fill: var(--hero-text-color);
+.footer-social .social-link {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--hero-text-color);
+}
+
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
+  background-color: var(--accent-color);
 }
 
 .social-title {
@@ -523,6 +546,8 @@ img {
 .button-filter:hover {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .flex-list {
@@ -551,4 +576,14 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.works-link {
+  display: block;
+}
+
+.works-link:hover,
+.works-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
