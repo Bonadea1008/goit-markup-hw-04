@@ -569,6 +569,7 @@ img {
 
 .works-link {
   display: block;
+  color: inherit;
 }
 
 .works-link:hover,
